@@ -104,7 +104,7 @@ const Todo = ({ todo }: TodoProps) => {
               {isEditing ? "Save" : "✒"}
             </button>
             <button
-              onClick={handleDelete}
+              onClick={() => handleDelete(todo.id)}
               className="bg-red-500 hover:bg-red-600 text-white font-medium py-1 px-2 rounded"
             >
               ✖
